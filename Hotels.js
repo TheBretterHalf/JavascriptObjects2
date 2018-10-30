@@ -1,7 +1,7 @@
-var Room1 = {avail:1, sqft:200, price: 300, balcony: "a balcony", view: "street view", smoking: "non-smoking"};
-var Room2 = {avail:1, sqft:250, price: 350, balcony: "no balcony", view: "street view", smoking: "non-smoking"};
-var Room3 = {avail:1, sqft:500, price: 375, balcony: "a balcony", view: "water view", smoking: "smoking"};
-var Room4 = {avail:1, sqft:750, price: 400, balcony: "no balcony", view: "water view", smoking: "non-smoking"};
+var Room1 = {avail:0, sqft:200, price: 300, balcony: "a balcony", view: "street view", smoking: "non-smoking"};
+var Room2 = {avail:4, sqft:250, price: 350, balcony: "no balcony", view: "street view", smoking: "non-smoking"};
+var Room3 = {avail:0, sqft:500, price: 375, balcony: "a balcony", view: "water view", smoking: "smoking"};
+var Room4 = {avail:4, sqft:750, price: 400, balcony: "no balcony", view: "water view", smoking: "non-smoking"};
 
 var readline = require("readline-sync");
 var totrooms =Room1.avail+Room2.avail+Room3.avail+Room4.avail;
@@ -69,6 +69,9 @@ if (Room1.avail>0 || Room2.avail>0 || Room3.avail>0 || Room4.avail>0){
             else {
                 console.log("We are not the Waldof Astoria")
             }
+    }
+    else {
+        console.log("That is not a valid input")
     }
 
 }
